@@ -1,0 +1,15 @@
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\Phlogiston.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\Phlogiston.pdb
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\MMHOOK_ModdedLightning.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\ModdedLightning.exe
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\Mono.Cecil.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\MonoMod.RuntimeDetour.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\bin\Debug\net4.5.1\MonoMod.Utils.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.csproj.AssemblyReference.cache
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.AssemblyInfoInputs.cache
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.AssemblyInfo.cs
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.csproj.CoreCompileInputs.cache
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.csproj.CopyComplete
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.dll
+C:\Development\Other\OpusMagnumMods\OpusMagnumMods\Phlogiston\obj\Debug\net4.5.1\Phlogiston.pdb

@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Development\\Other\\OpusMagnumMods\\OpusMagnumMods\\Phlogiston\\Phlogiston.csproj": {}
+  },
+  "projects": {
+    "C:\\Development\\Other\\OpusMagnumMods\\OpusMagnumMods\\Phlogiston\\Phlogiston.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Development\\Other\\OpusMagnumMods\\OpusMagnumMods\\Phlogiston\\Phlogiston.csproj",
+        "projectName": "Phlogiston",
+        "projectPath": "C:\\Development\\Other\\OpusMagnumMods\\OpusMagnumMods\\Phlogiston\\Phlogiston.csproj",
+        "packagesPath": "C:\\Users\\spinj\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\Other\\OpusMagnumMods\\OpusMagnumMods\\Phlogiston\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\spinj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.5.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net451": {
+            "targetAlias": "net4.5.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net451": {
+          "targetAlias": "net4.5.1",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

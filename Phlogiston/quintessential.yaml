@@ -1,0 +1,6 @@
+Name: Phlogiston
+Version: 0.1.0
+DLL: "bin/Debug/net4.5.1/Phlogiston.dll"
+Dependencies:
+- Name: Quintessential
+  Version: 0.4.0
