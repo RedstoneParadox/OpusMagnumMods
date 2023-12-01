@@ -116,15 +116,9 @@ namespace Phlogiston
                             )
                         {
                             List<Molecule> molecules = sim_self.field_3823;
-                            Molecule inputMolecule = null;
 
                             foreach (Molecule molecule in molecules)
                             {
-                                var none = enum_126.Prisma0;
-                                var prisma0 = enum_126.Prisma0;
-                                var prisma1 = enum_126.Prisma1;
-                                var prisma2 = enum_126.Prisma2;
-
                                 HexIndex[] noBondIndiciesL = new HexIndex[]
                                 {
                                     new HexIndex(1, -1),
