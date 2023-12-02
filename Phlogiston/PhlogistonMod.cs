@@ -105,8 +105,13 @@ namespace Phlogiston
                     var rightAtom = default(AtomReference);
 
                     // Check if both inputs have an atom
-                    if (maybeFindAtom(part, inputL, partList).method_99(out leftAtom) && maybeFindAtom(part, inputR, partList).method_99(out rightAtom))
+                    if (maybeFindAtom(part, inputL, gripperList).method_99(out leftAtom) && maybeFindAtom(part, inputR, gripperList).method_99(out rightAtom))
                     {
+                        Logger.Log("Found atoms on both inputs.");
+                        Logger.Log("leftAtom.field_2280 == AtomTypes.field_1678 : " + (leftAtom.field_2280 == AtomTypes.field_1678));
+                        Logger.Log("rightAtom.field_2280 == AtomTypes.field_1678 : " + (rightAtom.field_2280 == AtomTypes.field_1678));
+                        Logger.Log("!leftAtom.field_2282 : " + !leftAtom.field_2282);
+                        Logger.Log("!rightAtom.field_2282 : " + !rightAtom.field_2282);
                         // Check if both atoms are fire and unheld.
                         if (
                             leftAtom.field_2280 == AtomTypes.field_1678 // fire
@@ -116,6 +121,8 @@ namespace Phlogiston
                             )
                         {
                             List<Molecule> molecules = sim_self.field_3823;
+
+                            Logger.Log("Both atoms are fire and not held by a gripper.");
 
                             foreach (Molecule molecule in molecules)
                             {
@@ -136,19 +143,20 @@ namespace Phlogiston
                                 foreach (HexIndex index in noBondIndiciesL)
                                 {
                                     // If there is a bond, then it's not a pair.
-                                    if (doesBondExist(part, molecule, enum_126.None, inputL, index) || doesBondExist(part, molecule, enum_126.None, inputR, index))
+                                    if (!doesBondExist(part, molecule, enum_126.None, inputL, index) || !doesBondExist(part, molecule, enum_126.None, inputR, index))
                                     {
                                         hasOuterBond = true;
                                         break;
                                     }
                                 }
 
+                                Logger.Log("Outer bonds present? " + hasOuterBond);
+
                                 if (!hasOuterBond 
-                                    && doesBondExist(part, molecule, enum_126.Prisma0, inputL, inputR)
-                                    && doesBondExist(part, molecule, enum_126.Prisma1, inputL, inputR)
-                                    && doesBondExist(part, molecule, enum_126.Prisma2, inputL, inputR)
+                                    && doesBondExist(part, molecule, (enum_126)14, inputL, inputR)
                                     )
                                 {
+                                    Logger.Log("Both atoms are triplix-bonded to eachother.");
                                     // Break Triplix Bond
                                     molecule.method_1112(enum_126.None, part.method_1184(inputL), part.method_1184(inputR), struct_18.field_1431);
 
