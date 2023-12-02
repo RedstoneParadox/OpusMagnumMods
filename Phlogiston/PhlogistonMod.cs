@@ -86,7 +86,7 @@ namespace Phlogiston
                 var index1True = part.method_1184(index1);
                 var index2True = part.method_1184(index2);
 
-                return molecule.method_1111(bond, index1True, index2True);
+                return molecule.method_1113(index1True, index2True) == bond;
             }
 
             // var GlyphProjection = PartTypes.field_1778;
@@ -124,11 +124,11 @@ namespace Phlogiston
                                     new HexIndex(1, -1),
                                     new HexIndex(0, -1),
                                     new HexIndex(-1, 0),
+                                    new HexIndex(-1, 1),
                                     new HexIndex(0, 1),
                                     new HexIndex(1, 1),
-                                    new HexIndex(2, -1),
                                     new HexIndex(2, 0),
-                                    new HexIndex(2, 1),
+                                    new HexIndex(2, -1),
                                 };
                                 bool hasOuterBond = false;
 
