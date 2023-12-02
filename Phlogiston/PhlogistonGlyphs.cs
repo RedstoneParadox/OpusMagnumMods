@@ -41,8 +41,12 @@ namespace Phlogiston
 
             var combustionPath = path + "parts/combustion/";
             Texture combustionBase = class_235.method_615(combustionPath + "combustion_base");
-            Texture pipeRing = class_235.method_615("textures/parts/pipe_ring");
+            Texture inputRing = class_235.method_615("textures/parts/input_ring");
+            Texture outputRing = class_235.method_615("textures/parts/output_ring");
+            Texture outputShadow = class_235.method_615("textures/parts/output_shadow");
             Texture combustionBond = class_235.method_615(combustionPath + "combustion_bond");
+
+            Texture[] irisFullArray = class_238.field_1989.field_90.field_246;
 
             QApi.AddPartType(Combustion, (part, pos, editor, renderer) => {
                 PartSimState partSimState = editor.method_507().method_481(part);
@@ -57,9 +61,19 @@ namespace Phlogiston
                 var leftInputHex = originHex;
                 var rightInputHex = new HexIndex(1, 0);
 
-                drawPartGraphic(renderer, pipeRing, new Vector2(41f, 48f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
-                drawPartGraphic(renderer, pipeRing, new Vector2(-41f, 48f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
-                drawPartGraphic(renderer, combustionBond, new Vector2(-25f, 23f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                // Draw input graphics
+                drawPartGraphic(renderer, inputRing, new Vector2(41f, 44f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                drawPartGraphic(renderer, inputRing, new Vector2(-42f, 44f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                drawPartGraphic(renderer, combustionBond, new Vector2(-25f, 24f), 0f, Vector2.Zero, new Vector2(-1f, -1f));
+
+                // Draw output graphics
+                var outputLeftVec = new Vector2(-95f, 110f);
+                var outputRightVec = new Vector2(65f, 110f);
+
+                drawPartGraphic(renderer, outputShadow, outputRightVec, 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                drawPartGraphic(renderer, outputShadow, outputLeftVec, 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                drawPartGraphic(renderer, outputRing, outputRightVec, 0f, Vector2.Zero, new Vector2(-1f, -1f));
+                drawPartGraphic(renderer, outputRing, outputLeftVec, 0f, Vector2.Zero, new Vector2(-1f, -1f));
             });
             QApi.AddPartTypeToPanel(Combustion, false);
         }
